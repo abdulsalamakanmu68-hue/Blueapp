@@ -1,0 +1,16 @@
+.app{
+  color: darkblue;
+  font-size: 100px;
+}
+body {
+font-family: 'Inter', 'Source Sans 3', sans-serif;
+}
+
+/* If you want specific fonts for sections: */
+.font-inter {
+font-family: 'Inter', sans-serif;
+}
+
+.font-source {
+font-family: 'Source Sans 3', sans-serif;
+}
