@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import "../src/App.css";
 import Home from "./pages/Home";
-// import Conditions from "./pages/Conditions";
+
 
 
 
