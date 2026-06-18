@@ -5,7 +5,7 @@ const BellAliantLogin = () => {
   const [password, setPassword] = useState('');
   const [captchaChecked, setCaptchaChecked] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
       try {
     const response = await fetch("/api/login", {
